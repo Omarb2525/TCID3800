@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Vazquez Baasiri - Interactive Designer</title>
+    <title>Git and VS Code Tutorial</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            padding: 10px;
+            background-color: #f3f3f3;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 1em;
+            padding: 10px;
             text-align: center;
         }
 
-        section {
-            margin: 20px;
+        h1, h2 {
+            color: #333;
+            margin-top: 10px;
         }
 
         h2 {
-            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
         }
 
         ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
 
@@ -36,105 +40,132 @@
             margin-bottom: 10px;
         }
 
-        .experience-item {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 15px;
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
         }
 
-        .education {
-            font-weight: bold;
+        .title-container h1 {
+            margin: 0;
         }
 
-        .activities {
-            margin-top: 20px;
+        .title-container img {
+            margin-left: 10px;
+            max-height: 50px; /* Adjust as needed */
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Omar Vazquez Baasiri</h1>
-        <p>Roswell, GA ● (713) 232-9549 ● Omarb2525@gmail.com</p>
+        <h1>Git and VS Code Tutorial</h1>
     </header>
-
-    <section>
-        <h2>Skills & Abilities</h2>
-        <ul>
-            <li>Workflow Skills: Agile methodologies, Lean UX, and Waterflow methodologies</li>
-            <li>Production Tools: Figma, Sketch, Visual Studio, Adobe XD, After Effects, and Illustrator</li>
-            <li>UI/UX Skills: Style guides, Fully Interactional Designs, HTML/CSS, and Wireframe architecture</li>
-            <li>Basic Skills: Time management, Team-oriented, Creative thinking, Problem solver</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-
-        <div class="experience-item">
-            <h3>FedEx Employee</h3>
-            <p>August 2022 – October 2023</p>
-            <p>FedEx Office - Part Time; Roswell, Georgia</p>
-            <ul>
-                <li>Ability to work in a fast-paced, deadline-driven environment</li>
-                <li>Strong communication and problem-solving skills</li>
-                <li>Customer service experience</li>
-            </ul>
+    <div class="container">
+        <div class="title-container">
+            <h1>GIT Fundamentals</h1>
+            <img src="/Logo.png" alt="Git Logo Placeholder">
         </div>
-
-        <div class="experience-item">
-            <h3>UI Design & Tech Coach</h3>
-            <p>May 2022 – August 2022</p>
-            <p>Land of Thousands Hill Coffee - Contract; Roswell, Georgia</p>
+        
+        <section>
+            <h2>Setting Up the Environment</h2>
+            <p>Before we get started, make sure you have Git and VS Code installed.</p>
             <ul>
-                <li>Engineered an entire website design</li>
-                <li>Provided detailed notes on the functionality of new technology within the company</li>
-                <li>Redesigned all project management boards for peak performance use</li>
+                <li>Install Git from <a href="https://git-scm.com/" target="_blank">here</a>.</li>
+                <li>Download and install Visual Studio Code from <a href="https://code.visualstudio.com/" target="_blank">here</a>.</li>
             </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>UI/UX Design & Development</h3>
-            <p>June 2020  January 2022</p>
-            <p>MagMutual - Contract; Buckhead, Georgia</p>
+            <p>Once installed, configure Git within VS Code:</p>
             <ul>
-                <li>Helped build over 3 in-house software</li>
-                <li>Coordinated app design changes between the business user and developer teams</li>
-                <li>Assisted summer interns within the company, teaching design style guides and workflow between teams</li>
+                <li>Set your username and email by opening the terminal in VS Code and running:</li>
+                <li><code>git config --global user.name "Your Name"</code></li>
+                <li><code>git config --global user.email "your.email@example.com"</code></li>
             </ul>
-        </div>
+        </section>
+            <h2>Creating and Cloning a GitHub Repository</h2>
+            <p>To create a new repository on GitHub:</p>
+            <ol>
+                <li>Login to your GitHub account and click on the "New" button to create a new repository.</li>
+                <li>Fill in the repository name and other details, then click "Create repository".</li>
+            </ol>
+            <p>To clone the repository using VS Code:</p>
+            <ol>
+                <li>Open Visual Studio Code.</li>
+                <li>Go to the Source Control view.</li>
+                <li>Click on the "Clone Repository" button and paste the repository URL.</li>
+            </ol>
+        </section>
 
-        <div class="experience-item">
-            <h3>Creative Consultant & Video Editor</h3>
-            <p>May 2018  June 2020</p>
-            <p>Freelance - Roswell, Georgia</p>
+        <section>
+            <h2>Basic Git Operations in VS Code</h2>
+            <p>You can perform basic Git operations using the VS Code GUI:</p>
             <ul>
-                <li>Rendered full graphic animations for individuals</li>
-                <li>Rendered mocked-up logos for starter companies</li>
-                <li>Video editor for high school football teams</li>
+                <li>View the status of your changes.</li>
+                <li>Add files to the staging area.</li>
+                <li>Commit changes with a commit message.</li>
+                <li>Push changes to the remote repository.</li>
+                <li>Pull changes from the remote repository.</li>
             </ul>
-        </div>
+        </section>
 
-    </section>
+        <section>
+            <h2>Branching with VS Code</h2>
+            <p>Branching is essential for feature development or bug fixes. You can create and switch between branches using VS Code:</p>
+            <ul>
+                <li>Open the Source Control view.</li>
+                <li>Click on the "Create new branch" button and enter the branch name.</li>
+                <li>Switch between branches using the branch dropdown.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <p class="education">Kennesaw State University; Marietta, Georgia</p>
-        <p>August 2020 - December 2024</p>
-        <p>B.S. Interactive Design</p>
-        <p>Minor: Technical Communications</p>
-    </section>
+        <section>
+            <h2>Working with Remote Repositories</h2>
+            <p>You can add and manage remote repositories directly from VS Code:</p>
+            <ul>
+                <li>Open the Source Control view.</li>
+                <li>Click on the "More Actions" (...) button.</li>
+                <li>Choose "Remote: Add" and enter the remote repository URL.</li>
+            </ul>
+            <p>Once added, you can push to and pull from these remotes using the VS Code interface.</p>
+        </section>
 
-    <section class="activities">
-        <h2>Activities & Interests</h2>
-        <ul>
-            <li>Member of the Kennesaw State Interactive Design Club</li>
-            <li>Participants in Figma events</li>
-            <li>A regular contributor to online forums discussing UI/UX advancements</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Pull Requests and Code Reviews within VS Code</h2>
+            <p>GitHub integration in VS Code allows you to create pull requests and review code without leaving your editor:</p>
+            <ul>
+                <li>After making changes, push your branch to GitHub.</li>
+                <li>Go to your repository on GitHub and create a pull request.</li>
+                <li>In VS Code, you can review and discuss pull requests directly in the Pull Requests view.</li>
+            </ul>
+        </section>
+    </div>
 
-    <!-- Add your JavaScript functionalities here -->
-
+    <footer>
+        <p>This is a basic tutorial covering Git and VS Code integration. Feel free to explore more advanced features!</p>
+    </footer>
 </body>
 </html>
