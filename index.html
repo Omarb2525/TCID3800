@@ -89,7 +89,7 @@
     <div class="container">
         <div class="title-container">
             <h1>GIT Fundamentals</h1>
-            <img src="/Logo.png" alt="Git Logo Placeholder">
+            <img src="Logo.png">
         </div>
         
         <section>
